@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "bxlogs"
+version = "0.1.0"
+description = "simple logs config"
+authors = ["Baptiste Fontaine <baptiste@bixoto.com>"]
+license = "MIT"
+homepage = "https://github.com/Bixoto/bxlogs"
+include = ["bxlogs/py.typed"]
+readme = "README.md"
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    "Development Status :: 5 - Production/Stable",
+    'Programming Language :: Python :: 3',
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "^1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
